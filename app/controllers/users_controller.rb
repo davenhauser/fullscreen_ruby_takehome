@@ -8,4 +8,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def user_params
+    params.require(:user).permit(:name, :created_at, :updated_at)
+  end
+
 end

@@ -8,4 +8,8 @@ class VideosController < ApplicationController
     @video = Video.find(params[:id])
   end
 
+  def video_params
+    params.require(:video).permit(:title, :created_at, :updated_at)
+  end
+
 end
