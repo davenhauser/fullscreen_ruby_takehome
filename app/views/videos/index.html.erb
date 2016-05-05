@@ -1,0 +1,7 @@
+<div class= "video-container">
+      <% @videos.each do |video| %>
+
+      <h4><%= link_to video.title, video_path(video) %></h4>
+      <h4><%= video %></h4>
+   <% end %>
+</div>
