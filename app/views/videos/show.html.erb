@@ -1,5 +1,10 @@
-<h1><%=@video.title%></h1>
+<strong>The video "<%=@video.title%>" </strong>
 
+<strong>has <%=@users.count%> users</strong>
+
+<br>
+
+<strong> Here go their names:</strong>
 <ul>
   <%= @users.each do |user| %>
    <li>
@@ -7,4 +12,5 @@
    </li>
  <%end%>
 </ul>
+
 
